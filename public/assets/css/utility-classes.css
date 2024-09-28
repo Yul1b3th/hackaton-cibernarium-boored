@@ -31,7 +31,7 @@
   opacity: 0;
 }
 
-.mb-md{
+.mb-md {
   margin-bottom: 0.5rem;
 }
 
@@ -70,7 +70,7 @@
   overflow: hidden;
 }
 .section {
-    min-height: 100vh;
+  min-height: 100vh;
   padding: 2rem 1.5rem 3rem 1.5rem;
 }
 
@@ -79,7 +79,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem 0.9375rem;
+  padding: 0rem 0.9375rem;
   width: 100%;
 }
 
@@ -110,7 +110,11 @@
 /* Colors */
 
 .bg-gradient {
-  background: linear-gradient(0deg, rgba(246, 246, 246, 1) 0%, rgb(255 252 247) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgb(255 252 247) 100%
+  );
 }
 
 /* Typography */

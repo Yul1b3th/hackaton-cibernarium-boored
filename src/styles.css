@@ -6,6 +6,32 @@
 @import url("../public/assets/css/utility-classes.css");
 @import url("../public/assets/css/compontents.css");
 
+app-root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  background: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3f7d3;
+  color: #1c1c1c;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
