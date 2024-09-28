@@ -4,7 +4,6 @@
 @import url("../public/assets/css/custom-properties.css");
 @import url("../public/assets/css/general-styles.css");
 @import url("../public/assets/css/utility-classes.css");
-@import url("../public/assets/css/compontents.css");
 
 app-root {
   display: flex;
@@ -14,7 +13,7 @@ app-root {
 }
 
 header {
-  height: 4rem;
+  height: 3rem;
   display: flex;
   align-items: center;
 }

@@ -1,8 +1,23 @@
 <div class="container">
-  <activity-filters />
-  <img src="assets/img/img.png" alt="" width="180" height="187" />
-  <div>
-    <h1>TROBA ALGUNA COSA A FER</h1>
-    <button class="btn-secondary">Generar</button>
+  <div class="half-screen zigzag-border">
+    <div class="activity-section">
+      <activity-filters />
+      <div class="image-wrapper">
+        <img
+          class="boored-image"
+          src="assets/img/img.png"
+          alt=""
+          width="180"
+          height="187"
+        />
+      </div>
+      <div class="generate-activity">
+        <h1>TROBA ALGUNA COSA A FER</h1>
+        <button class="btn-secondary">Generar</button>
+      </div>
+    </div>
+  </div>
+  <div class="half-screen">
+    <activity-card />
   </div>
 </div>

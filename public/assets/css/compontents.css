@@ -16,53 +16,6 @@
   transition: opacity ease-out 1s;
 }
 
-/*-------- BUTTON --------*/
-.btn {
-  width: 160px;
-  min-width: 160px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  height: 55px;
-  text-align: center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  transition: all 0.4s ease-in-out;
-  position: relative;
-  padding: 4px;
-  box-sizing: border-box;
-  background-image: linear-gradient(
-    to right,
-    #25aae1,
-    #40e495,
-    #30dd8a,
-    #2bb673
-  );
-  color: #006600;
-}
-
-.btn span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background: #ffffff;
-  border-radius: 50px;
-  transition: background 0.5s ease;
-}
-
-.btn.active span {
-  background: transparent;
-}
-
-.btn.active {
-  color: #fff;
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-  border: none;
-}
-
 /*-------- Orgenizar --------*/
 .footer {
   background: var(--dark);

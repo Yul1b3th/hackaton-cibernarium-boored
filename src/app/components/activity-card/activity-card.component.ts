@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-activity-card',
+  selector: 'activity-card',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './activity-card.component.html',
