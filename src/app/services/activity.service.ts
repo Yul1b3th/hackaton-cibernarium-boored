@@ -18,7 +18,7 @@ export class ActivityService {
   getRandomActivity(): Observable<Activity> {
     console.log(this.baseUrl);
 
-    return this.http.get<Activity>(`${this.baseUrl}/random`).pipe(
+    return this.http.get<Activity>(`/api/random`).pipe(
       tap((activity) =>
         console.log(`Actividad aleatoria: ${activity.activity}`)
       ),
@@ -37,7 +37,7 @@ export class ActivityService {
     if (participants) params['participants'] = participants;
 
     return this.http
-      .get<Activity[]>(`${this.baseUrl}/filter`, { params })
+      .get<Activity[]>(`/api/filter`, { params })
       .pipe(catchError(this.handleError));
   }
 
