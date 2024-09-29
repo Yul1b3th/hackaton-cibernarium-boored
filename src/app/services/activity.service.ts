@@ -5,16 +5,20 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 
 import { Activity } from '@interfaces/activity.interface';
+import { environment } from '@environments/environment.development';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ActivityService {
   private readonly http = inject(HttpClient);
+  private readonly baseUrl: string = environment.baseUrl;
 
   // Obtener una actividad aleatoria
   getRandomActivity(): Observable<Activity> {
-    return this.http.get<Activity>('/api/random').pipe(
+    console.log(this.baseUrl);
+
+    return this.http.get<Activity>(`${this.baseUrl}/random`).pipe(
       tap((activity) =>
         console.log(`Actividad aleatoria: ${activity.activity}`)
       ),
@@ -33,7 +37,7 @@ export class ActivityService {
     if (participants) params['participants'] = participants;
 
     return this.http
-      .get<Activity[]>('/api/filter', { params })
+      .get<Activity[]>(`${this.baseUrl}/filter`, { params })
       .pipe(catchError(this.handleError));
   }
 
