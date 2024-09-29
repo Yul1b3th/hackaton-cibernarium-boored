@@ -1,2 +1,6 @@
 <h2>Activitat</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+@if(activity()){
+<p>{{ activity() }}</p>
+}@if( error() ){
+<p class="error-message">{{ error() }}</p>
+}

@@ -1,9 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importación de archivos de estilo */
 @import url("../public/assets/css/reset.css");
 @import url("../public/assets/css/fonts.css");
-@import url("../public/assets/css/custom-properties.css");
-@import url("../public/assets/css/general-styles.css");
-@import url("../public/assets/css/utility-classes.css");
+
+/* Variables CSS */
+:root {
+  color-scheme: light dark;
+  --primary: #30daa6;
+  --secondary: #4cd1d4;
+  --dark: #1d1d1d;
+  --light: #3f3f3f;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #eff5f5;
+
+  --primary-hsl: 158.154 77% 50%;
+  --secondary-hsl: 181.705 75% 46%;
+  --dark-hsl: 0 0% 11%;
+  --light-hsl: 0 0% 25%;
+  --black-hsl: 0 0% 0%;
+  --white-hsl: 0 0% 100%;
+  --gray-hsl: 180 23% 95%;
+
+  --font-primary: "BeVietnamPro", Arial, sans-serif;
+}
+
+/* ------------------- */
+/* Estilos generales   */
+/* ------------------- */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--light);
+  background-color: var(--white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* *:focus {
+   outline: 1px solid var(--light);
+   padding: 0.2rem;
+  } */
+
+*:focus-visible {
+  outline: 0.16rem solid #ff4abe;
+  outline-offset: 0.3125rem;
+}
+
+/* ------------------- */
+/* Estilos de layout   */
+/* ------------------- */
 
 app-root {
   display: flex;
@@ -37,25 +138,63 @@ footer {
   justify-content: center;
   align-items: center;
   background: #e3f7d3;
-  color: #1c1c1c;
+  color: var(--dark);
+  text-align: center;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* ------------------- */
+/* Clases utilitarias  */
+/* ------------------- */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+  border: 1px solid #ff0000;
+  padding: 0.3rem;
+  background-color: #ffdbdb;
+}
+
+/* ------------------- */
+/* Media Queries       */
+/* ------------------- */
+
 @media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
-/* Large devices (desktops, 992px and up)  */
 @media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  html {
+    font-size: 16px;
+  }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }

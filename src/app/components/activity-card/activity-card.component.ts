@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'activity-card',
@@ -9,4 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './activity-card.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class ActivityCardComponent {}
+export default class ActivityCardComponent {
+  public activity = input();
+  public error = input();
+}

@@ -13,11 +13,13 @@
       </div>
       <div class="generate-activity">
         <h1>TROBA ALGUNA COSA A FER</h1>
-        <button class="btn btn-primary">Generar</button>
+        <button class="btn btn-primary" (click)="generateActivity()">
+          Generar
+        </button>
       </div>
     </div>
   </div>
   <div class="half-screen">
-    <activity-card />
+    <activity-card [activity]="activity()" [error]="error()" />
   </div>
 </div>

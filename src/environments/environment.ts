@@ -1,3 +1,1 @@
-export const environment = {
-  baseUrl: `https://bored-api.appbrewery.com`,
-};
+export const environment = {};
