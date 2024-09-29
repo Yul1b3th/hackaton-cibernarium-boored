@@ -1,16 +1,17 @@
 .filters {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow: scroll;
 
   @media (min-width: 1200px) {
     overflow: visible;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .btn {
-    width: 140px;
-    min-width: 140px;
+    width: 130px;
+    min-width: 130px;
     font-weight: 600;
     font-size: 14px;
     color: #fff;
@@ -42,6 +43,16 @@
       background: #ffffff;
       border-radius: 50px;
       transition: background 0.5s ease;
+    }
+
+    &:hover {
+      background-position: 100% 0;
+      color: #fff;
+
+      span {
+        background: #25aae1;
+        color: #fff;
+      }
     }
 
     &.active {

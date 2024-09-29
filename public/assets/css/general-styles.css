@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -78,7 +78,7 @@ select {
 
 @media (min-width: 992px) {
   html {
-    font-size: 18px; /* Utilizando variable de tamaño de fuente de Bootstrap */
+    font-size: 16px; /* Utilizando variable de tamaño de fuente de Bootstrap */
   }
 }
 
