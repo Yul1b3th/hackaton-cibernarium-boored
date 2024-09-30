@@ -53,7 +53,7 @@ export default class HomeComponent implements OnInit {
     });
     this.meta.updateTag({
       name: 'og:image',
-      content: `assets/img/img.jpg`,
+      content: `https://hackaton-cibernarium-boored.vercel.app/assets/img/img.png`,
     });
 
     if (isPlatformBrowser(this.platform)) {
