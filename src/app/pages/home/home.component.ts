@@ -33,12 +33,12 @@ export default class HomeComponent implements OnInit {
   public error = signal('');
 
   ngOnInit() {
+    // Configuración inicial del título y las metatags
     this.title.setTitle('Troba Activitats | Aplicació de Suggeriments');
     this.meta.updateTag({
       name: 'description',
       content: 'Descobreix activitats aleatòries per gaudir i relaxar-te.',
     });
-    this.meta.updateTag({ name: 'og:title', content: 'About Page' });
     this.meta.updateTag({
       name: 'keywords',
       content: 'activitats, suggeriments, coses a fer, aleatori, diversió',
