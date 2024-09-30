@@ -6,7 +6,7 @@ Este repositorio contiene el código fuente de una aplicación web llamada **Boo
 
 ## 🚀 Demo
 
-Puedes ver la demostración de la aplicación en [Boored](https://hackaton-cibernarium-boored.vercel.app/activity).
+Puedes ver la demostración de la aplicación en [Boored](https://hackaton-cibernarium-boored.vercel.app/).
 
 ## ✨ Características
 
