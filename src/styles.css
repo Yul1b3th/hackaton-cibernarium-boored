@@ -5,29 +5,16 @@
 /* Variables CSS */
 :root {
   color-scheme: light dark;
-  --primary: #30daa6;
-  --secondary: #4cd1d4;
   --dark: #1d1d1d;
   --light: #3f3f3f;
   --black: #000000;
   --white: #ffffff;
   --gray: #eff5f5;
 
-  --primary-hsl: 158.154 77% 50%;
-  --secondary-hsl: 181.705 75% 46%;
-  --dark-hsl: 0 0% 11%;
-  --light-hsl: 0 0% 25%;
-  --black-hsl: 0 0% 0%;
-  --white-hsl: 0 0% 100%;
-  --gray-hsl: 180 23% 95%;
-
   --font-primary: "BeVietnamPro", Arial, sans-serif;
 }
 
-/* ------------------- */
 /* Estilos generales   */
-/* ------------------- */
-
 html {
   scroll-behavior: smooth;
   font-size: 14px;
@@ -73,6 +60,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 p:not(:last-child) {
@@ -92,20 +80,12 @@ select {
   font: inherit;
 }
 
-/* *:focus {
-   outline: 1px solid var(--light);
-   padding: 0.2rem;
-  } */
-
 *:focus-visible {
   outline: 0.16rem solid #ff4abe;
   outline-offset: 0.3125rem;
 }
 
-/* ------------------- */
 /* Estilos de layout   */
-/* ------------------- */
-
 app-root {
   display: flex;
   min-height: 100vh;
@@ -142,10 +122,7 @@ footer {
   text-align: center;
 }
 
-/* ------------------- */
 /* Clases utilitarias  */
-/* ------------------- */
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -162,10 +139,7 @@ footer {
   background-color: #ffdbdb;
 }
 
-/* ------------------- */
 /* Media Queries       */
-/* ------------------- */
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
