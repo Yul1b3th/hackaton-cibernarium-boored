@@ -1,1 +1,6 @@
-
+.page-not-found {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+}
