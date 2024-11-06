@@ -5,7 +5,7 @@
   "compilerOptions": {
     "paths": {
       "@components/*": ["./src/app/components/*"],
-      "@/pages/*": ["./src/app//pages/*"],
+      "@pages/*": ["./src/app//pages/*"],
       "@interfaces/*": ["./src/app/interfaces/*"],
       "@services/*": ["./src/app/services/*"],
       "@environments/*": ["./src/environments/*"]

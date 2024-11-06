@@ -1,12 +1,12 @@
-# Boored
+# TryTime
 
 ## 📄 Descripción
 
-Este repositorio contiene el código fuente de una aplicación web llamada **Boored**, que genera actividades aleatorias utilizando Angular y Server-Side Rendering (SSR).
+Este repositorio contiene el código fuente de una aplicación web llamada **TryTime**, que genera actividades aleatorias utilizando Angular y Server-Side Rendering (SSR).
 
 ## 🚀 Demo
 
-Puedes ver la demostración de la aplicación en [Boored](https://hackaton-cibernarium-boored.vercel.app/).
+Puedes ver la demostración de la aplicación en [TryTime](https://hackaton-cibernarium-boored.vercel.app/).
 
 ## ✨ Características
 
@@ -15,6 +15,12 @@ Puedes ver la demostración de la aplicación en [Boored](https://hackaton-ciber
 - **SSR con Angular**: La aplicación utiliza Server-Side Rendering para mejorar el rendimiento y SEO.
 - **Gestión de errores**: Maneja adecuadamente los errores de red y límites de solicitud.
 - **Optimización del rendimiento**: Utiliza proxy para evitar problemas de CORS y mejora la interacción con la API.
+- **Diseño Responsivo**: La interfaz se adapta a dispositivos móviles y de escritorio, ofreciendo una experiencia uniforme en todas las plataformas.
+
+## ☁️ Interacción con la API "Bored API"
+
+Este proyecto frontend se conecta con la [API Bored](https://bored-api.appbrewery.com/), la cual proporciona actividades aleatorias y filtradas, ideal para ayudar a los usuarios a encontrar algo entretenido que hacer en función de sus preferencias.
+
 
 ## 💻 Tecnologías Utilizadas
 
